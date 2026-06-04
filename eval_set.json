@@ -1,0 +1,17 @@
+[
+  {
+    "input": "Hola, necesito un certificado de seguro urgente por favor",
+    "expected_output": "Venus Ins Group",
+    "description": "Validar que el agente se presente correctamente con la marca de la startup."
+  },
+  {
+    "input": "Mi número DOT es 1234567",
+    "expected_output": "verificar_dot_cliente",
+    "description": "Validar que el agente reconozca el DOT e invoque la herramienta de verificación."
+  },
+  {
+    "input": "El holder es TQL LOGISTICS LLC en Miami FL",
+    "expected_output": "correos",
+    "description": "Validar que tras recibir el holder, el agente pase a solicitar los correos electrónicos."
+  }
+]

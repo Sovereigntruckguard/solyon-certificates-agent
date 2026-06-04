@@ -1,0 +1,236 @@
+{
+  "eval_set_id": "Pruebas_Certificados_Venus",
+  "name": "Pruebas_Certificados_Venus",
+  "eval_cases": [
+    {
+      "eval_id": "hola_necesito_un_certificado_de_seguro",
+      "conversation": [
+        {
+          "invocation_id": "e-03f0ab4e-d2d7-4c22-8056-d1987dd22d27",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hola necesito un certificado de seguro"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1780468234.8188903
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_tool_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1780468642.9206307
+    },
+    {
+      "eval_id": "necesito_verificar_si_este_dot_tiene_seguro",
+      "conversation": [
+        {
+          "invocation_id": "e-67a12051-954f-4d3c-8d21-a46fdb1b3307",
+          "user_content": {
+            "parts": [
+              {
+                "text": "necesito verificar si este dot tiene seguro"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "¡Hola! Soy tu asistente de seguros de Venus Ins Group. Para verificar el seguro, por favor, proporcióneme el número DOT de la empresa de transporte."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1780471733.8361626
+        },
+        {
+          "invocation_id": "e-3990fd0a-63e0-4186-ae60-b0ce9db13e24",
+          "user_content": {
+            "parts": [
+              {
+                "text": "9999999"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "El número DOT 9999999 no se encuentra registrado en nuestro sistema. Por favor, verifique el número e inténtelo de nuevo.",
+                "thought_signature": "CrACAQw51sf_wwfR7fongOZOfrG6NWsxbt6nmTGm-EfPhoELfCpT-VJ99-r8MMnjv8fc_b0jSDc3jdy0i0NOA0qZFb2W-qEs8x4tgdqjVBjzTrXEzYMavaglnsTrzolh9ZS2Uxse_CsEvh6zKmY5kuFjI2dQ92ckXxzYJyzhAplAxlYLFkwu6g18DI4305zg2dAajdwJ-k-KVfGMAylmk4elNbCjfZthYgQPhZeEc993LwmsWOvcSe2_n4r2tLwvVoIlvbCXhhgJXwNpoDcTAVoaW7_DVQapLbOZ809df7tSh_q1FjOtWufnqxIhf036I2aiPdzTHxxPq0agC1489WddhJlDn8VJgQTEALT6cLiNaK35WFRbWrFSM-NrSBvxW_D3f3sqKo3JpOyEFypt1ln_zA=="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "Asistente_Seguros_Venus",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-eb5b4507-580f-4636-9dd9-bcb10cdf041a",
+                        "args": {
+                          "dot": "9999999"
+                        },
+                        "name": "verificar_dot_cliente"
+                      },
+                      "thought_signature": "CrUBAQw51sci4fjH-lk0uf1_ugU9C12fkKY9xavsfZ6GSW6ARMGrKd7ZRddFHYT2EBQy_6HdwuQXIuysP_i-3hkfRByTEoFG1R_CLeXd3-xqGAEkPbfiahNnefLt8_kh58udpHsOqOxeUoan_-SnEVac2OLG4Ahxpnh2WmiRyVaBOPdtu5WwNjnszkjIWpg3QxDCnwuP5vHjRS_JxR5R_WKrJyWy7Js7UdJSkKXOupPfcYkelQneAQ=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "Asistente_Seguros_Venus",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-eb5b4507-580f-4636-9dd9-bcb10cdf041a",
+                        "name": "verificar_dot_cliente",
+                        "response": {
+                          "status": "error",
+                          "mensaje": "El número DOT 9999999 no se encuentra registrado en el sistema de Venus Ins Group."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1780471743.9652398
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_tool_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1780471752.2643368
+    },
+    {
+      "eval_id": "quiero_un_certificado_de_seguro_pero_no_tengo_t",
+      "conversation": [
+        {
+          "invocation_id": "e-0aedb0c0-f16f-4ab3-b52c-f42cbf01d191",
+          "user_content": {
+            "parts": [
+              {
+                "text": "quiero un certificado de seguro pero no tengo todos los datos"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "¡Hola! Soy tu asistente de seguros de Venus Ins Group. Con gusto te ayudaré a emitir tu Certificado de Seguro.\n\nPara empezar, por favor, proporciónanos el Número DOT de la empresa de transporte."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1780471925.201337
+        },
+        {
+          "invocation_id": "e-8c790499-8b72-4bfa-b3b7-2b58f8dc2491",
+          "user_content": {
+            "parts": [
+              {
+                "text": "1234567"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "¡Excelente! He verificado el Número DOT 1234567. La empresa asociada es N & J TRANSPORT INC.\n\nAhora, por favor, proporciónanos la siguiente información del Certificate Holder:\n\n*   Nombre legal\n*   Dirección\n*   Ciudad\n*   Estado\n*   Código Postal",
+                "thought_signature": "CqwCAQw51sdRhz9fWmIhDcifVraoP0uvmZNbFJPpNKqWh-PZx1sT30N7glv4XB8yjfhyvYUOLCX7299Qn5mRllMDD9y9p5LpHGl7z4D5YJ-DVGlZ7WuvRNDUrswaFps1i9jtkFhUZlWITdDWDuyxtjakCcYvmbHppj8W2T1Qamw7tA8lG61X3c1amHIGt_9j0fpRh5ktf223UT5x3vjvNwYcFX6MrkfQlJsPVpxUFnjVoo-n45Pl7huiajYXJI8uPOwGv4B7ZP_BNE5uFvuwM1bUjHRHphJ4TL-Sf9D7UhVaVASd5iC-HmncWDxL6BifPHnCCk0YAlXp3j9C5pVx-vp2QyXZl3ZUo62OUxKssM9ZyPlq_d19og3cwdO7Tl1ixoVlIWLFJcPQYX462I3q"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "Asistente_Seguros_Venus",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-ab65bdcb-54a6-420e-a4e4-46e466285131",
+                        "args": {
+                          "dot": "1234567"
+                        },
+                        "name": "verificar_dot_cliente"
+                      },
+                      "thought_signature": "CsoBAQw51seBiL8-E_3Mp-r1DmfyIPIQ0GJD6rtELxi2y0F2mSNfK0LABDkEH6s_ztSMWR-GCwOxbvV30H0Iyc5avaVCYwcvVLy77mAFman63bpdrWNIykFRNBru7IS_d4BkLS_Wg_OtPSE4To_H4xwUgnTcFYiq8FZ_93qF9i3GbrYTVK1YuzdUlCgfhvJaoA50_XYbcKpjtT2QbCLlh1e7xNY90-99JXzfITMKoZNadTfcNbN3LDGY4XP3oQLIubAXFB6Fu--tWEHTTg=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "Asistente_Seguros_Venus",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-ab65bdcb-54a6-420e-a4e4-46e466285131",
+                        "name": "verificar_dot_cliente",
+                        "response": {
+                          "status": "success",
+                          "mensaje": "Póliza activa verificada.",
+                          "empresa_nombre": "N & J TRANSPORT INC"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1780471948.7447925
+        },
+        {
+          "invocation_id": "e-a5a3f945-33ba-432a-9878-7f12251ee604",
+          "user_content": {
+            "parts": [
+              {
+                "text": "TQL LOGISTICS LLC"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Entendido. Para TQL LOGISTICS LLC, ¿podrías proporcionarme la dirección completa, incluyendo la calle, ciudad, estado y código postal?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1780471959.1471915
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_tool_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1780471980.0100324
+    }
+  ],
+  "creation_timestamp": 1780468316.1135507
+}

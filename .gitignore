@@ -1,0 +1,9 @@
+# Ocultar credenciales
+.env
+
+# Ocultar carpetas de caché de Python
+__pycache__/
+.adk/
+
+# Ocultar PDFs generados en tus pruebas para que no llenen el repositorio
+Certificado_Generado_*.pdf
